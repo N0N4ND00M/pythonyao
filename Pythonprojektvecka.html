@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lär dig Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #005bb5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lär dig Python – En Interaktiv Guide</h1>
+        <p>En komplett introduktion till Python för nybörjare.</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Vad är Python?</a>
+        <a href="#install">Installera Python</a>
+        <a href="#functions">Funktioner i Python</a>
+        <a href="#faq">FAQ</a>
+        <a href="#checklist">Checklista</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#guide">Guide till chatbot</a>
+    </nav>
+
+    <section id="intro">
+        <h2>Vad är Python?</h2>
+        <p>Python är ett populärt programmeringsspråk känt för sin enkelhet och mångsidighet.</p>
+    </section>
+
+    <section id="install">
+        <h2>Hur installerar man Python?</h2>
+        <ol>
+            <li>Gå till <a href="https://www.python.org/downloads/" target="_blank">Python.org</a> och ladda ner Python.</li>
+            <li>Öppna installationsfilen och välj "Add Python to PATH".</li>
+            <li>Klicka på "Install Now" och vänta tills installationen är klar.</li>
+            <li>Öppna terminalen och skriv <code>python --version</code> för att kontrollera installationen.</li>
+        </ol>
+    </section>
+
+    <section id="functions">
+        <h2>Enkel funktion i Python</h2>
+        <p>En funktion är en kodsnutt som kan ta in data och returnera ett resultat.</p>
+        <pre><code>
+def hälsa(namn):
+    return f"Hej, {namn}!"
+
+print(hälsa("Alice")) # Output: Hej, Alice!
+        </code></pre>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ – Vanliga problem</h2>
+        <details><summary>Jag får felet "SyntaxError: invalid syntax"</summary>
+            <p>Dubbelkolla att du har rätt indrag (4 mellanslag eller en tab) efter <code>def</code>.</p>
+        </details>
+        <details><summary>Hur tar jag in användarinmatning?</summary>
+            <p>Använd <code>input()</code>:</p>
+            <pre><code>
+namn = input("Vad heter du?")
+print("Hej, " + namn + "!")
+            </code></pre>
+        </details>
+        <details><summary>Hur konverterar jag en sträng till en siffra?</summary>
+            <p>Använd <code>int()</code> eller <code>float()</code>.</p>
+        </details>
+        <details><summary>Hur kontrollerar jag om ett tal är jämnt eller udda?</summary>
+            <p>Använd <code>if tal % 2 == 0</code>.</p>
+        </details>
+        <details><summary>Hur skapar jag en lista?</summary>
+            <p>Använd hakparenteser: <code>min_lista = [1, 2, 3]</code>.</p>
+        </details>
+        <details><summary>Vad gör <code>.lower()</code>?</summary>
+            <p>Konverterar en sträng till små bokstäver.</p>
+        </details>
+        <details><summary>Hur använder jag <code>if</code>-satser?</summary>
+            <pre><code>
+if 5 > 3:
+    print("5 är större än 3")
+            </code></pre>
+        </details>
+        <details><summary>Hur loopar jag genom en lista?</summary>
+            <pre><code>
+for x in [1, 2, 3]:
+    print(x)
+            </code></pre>
+        </details>
+        <details><summary>Hur avbryter jag en loop?</summary>
+            <pre><code>
+for x in range(10):
+    if x == 5:
+        break
+    print(x)
+            </code></pre>
+        </details>
+        <details><summary>Hur definierar jag en funktion?</summary>
+            <pre><code>
+def min_funktion():
+    print("Hej!")
+            </code></pre>
+        </details>
+    </section>
+
+    <section id="checklist">
+        <h2>Interaktiv Checklista</h2>
+        <p>Markera de steg du har förstått:</p>
+        <ul>
+            <li><input type="checkbox"> Jag förstår vad Python är.</li>
+            <li><input type="checkbox"> Jag vet hur man installerar Python.</li>
+            <li><input type="checkbox"> Jag har skrivit en funktion i Python.</li>
+            <li><input type="checkbox"> Jag har testat att använda <code>input()</code>.</li>
+            <li><input type="checkbox"> Jag förstår hur man använder variabler och datatyper.</li>
+            <li><input type="checkbox"> Jag har använt <code>if</code>-satser för att fatta beslut.</li>
+            <li><input type="checkbox"> Jag har använt loopar (<code>while</code>).</li>
+            <li><input type="checkbox"> Jag har hanterat listor och dictionaries.</li>
+            <li><input type="checkbox"> Jag har skrivit och använt egna funktioner.</li>
+            <li><input type="checkbox"> Jag har testat att läsa och skriva till filer.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz – Testa dina kunskaper</h2>
+        <div id="quiz-container"></div>
+    </section>
+
+    <!-- Ny section med chatbot-guiden -->
+    <section id="guide">
+        <h2>Hur man gör en chatbot med Python</h2>
+        <p>Den här guiden hjälper dig att skapa en enkel chatbot i Python. Vi kommer att använda ett grundläggande tillvägagångssätt med Python och regex för att bygga en chatbot som kan svara på vissa frågor. Du behöver ingen tidigare erfarenhet av programmering för att följa den här guiden.</p>
+        
+        <h3>Steg 1: Installera Python</h3>
+        <p>Om du inte redan har Python installerat på din dator, kan du ladda ner och installera det från den officiella hemsidan:</p>
+        <ul>
+            <li>Gå till <a href="https://www.python.org" target="_blank">Python.org</a>.</li>
+            <li>Ladda ner den senaste versionen och installera den.</li>
+        </ul>
+        
+        <h3>Steg 2: Förbereda arbetsmiljön</h3>
+        <p>Innan vi börjar skriva kod, behöver du en textredigerare (t.ex. Visual Studio Code, Sublime Text, eller Python IDLE) för att skriva och köra Python-kod.</p>
+        
+        <h3>Steg 3: Skapa din första chatbot</h3>
+        <ol>
+            <li>
+                <strong>Skapa en Python-fil:</strong> Öppna din textredigerare, skapa en ny fil och spara den som <code>chatbot.py</code>.
+            </li>
+            <li>
+                <strong>Skriv din första kod:</strong>
+                <p>Exempel på en enkel chatbot:</p>
+                <pre><code>def chatbot():
+    print("Hej! Jag är din chatbot. Skriv 'sluta' för att avsluta.")
+
+    while True:
+        # Ta emot användarens input
+        user_input = input("Du: ").lower()
+        
+        # Matcha med olika fördefinierade fraser
+        if "hej" in user_input:
+            print("Chatbot: Hej! Hur kan jag hjälpa dig idag?")
+        elif "hur mår du" in user_input:
+            print("Chatbot: Jag är en dator, så jag har inte känslor, men tack för att du frågar!")
+        elif "vad kan du göra" in user_input:
+            print("Chatbot: Jag kan svara på enkla frågor och föra samtal med dig!")
+        elif "sluta" in user_input:
+            print("Chatbot: Hejdå! Ha en bra dag!")
+            break
+        else:
+            print("Chatbot: Jag förstår inte riktigt. Kan du fråga något annat?")
+
+if __name__ == "__main__":
+    chatbot()</code></pre>
+            </li>
+        </ol>
+        
+        <h3>Steg 4: Förklaring av koden</h3>
+        <ul>
+            <li><strong>Funktioner i Python:</strong> <code>def chatbot():</code> definierar en funktion som kör chatboten.</li>
+            <li><strong>Användarinput:</strong> <code>input()</code> används för att ta emot data från användaren, och <code>.lower()</code> gör om texten till små bokstäver.</li>
+            <li><strong>Villkor:</strong> Med <code>if</code>-satser matchas användarens input mot specifika fraser.</li>
+            <li><strong>Avsluta programmet:</strong> När användaren skriver "sluta" avslutas loopen med <code>break</code>.</li>
+        </ul>
+        
+        <h3>Steg 5: Köra chatboten</h3>
+        <p>Öppna en terminal (eller kommandoprompt om du använder Windows) och navigera till mappen där <code>chatbot.py</code> är sparad. Kör programmet med kommandot:</p>
+        <pre><code>python chatbot.py</code></pre>
+        
+        <h3>Steg 6: Förbättra chatboten</h3>
+        <p>När du har en grundläggande chatbot kan du göra den mer avancerad genom att:</p>
+        <ul>
+            <li>Lägga till fler svar och mönster med fler <code>if</code>-satser.</li>
+            <li>Använda regex för mer avancerad textmatchning. Exempel:</li>
+        </ul>
+        <pre><code>import re
+
+def chatbot():
+    print("Hej! Jag är din chatbot. Skriv 'sluta' för att avsluta.")
+
+    while True:
+        user_input = input("Du: ").lower()
+        
+        if re.search(r"hej|tjena|hallå", user_input):
+            print("Chatbot: Hej! Hur kan jag hjälpa dig idag?")
+        elif "hur mår du" in user_input:
+            print("Chatbot: Jag är en dator, så jag har inte känslor, men tack för att du frågar!")
+        elif "sluta" in user_input:
+            print("Chatbot: Hejdå!")
+            break
+        else:
+            print("Chatbot: Jag förstår inte riktigt.")
+
+if __name__ == "__main__":
+    chatbot()</code></pre>
+        <p>Du kan även göra chatboten mer interaktiv genom att låta den svara dynamiskt, exempelvis genom att fråga användarens namn.</p>
+        
+        <h3>Steg 7: Utveckla vidare</h3>
+        <p>När du känner dig bekväm med den grundläggande chatboten, kan du experimentera med externa bibliotek som <code>nltk</code> för språkanalys eller bygga en webbchatbot med hjälp av Flask eller Django.</p>
+    </section>
+
+    <script>
+        const quizData = [
+            { question: "Vad returnerar print(2 * 4)?", answer: "8" },
+            { question: "Vad skrivs ut från for i in range(3)?", answer: "0\n1\n2" },
+            { question: "Vad blir 10 // 3?", answer: "3" },
+            { question: "Vilken datatyp har x om x = 'Hej'?", answer: "str" },
+            { question: "Vad returnerar lista = [1,2,3]; print(lista[1])?", answer: "2" },
+            { question: "Vad gör print('PYTHON'.lower())?", answer: "python" },
+            { question: "Vad returnerar print(5 > 3 and 2 < 4)?", answer: "True" },
+            { question: "Vad skrivs ut av for bokstav in 'Hej': print(bokstav)?", answer: "H\ne\nj" }
+        ];
+
+        function createQuiz() {
+            const quizContainer = document.getElementById("quiz-container");
+            quizData.forEach((q, index) => {
+                const quizHTML = `
+                    <p>${index + 1}. ${q.question}</p>
+                    <input type="text" id="quiz${index}" placeholder="Skriv ditt svar här">
+                    <button onclick="checkQuiz(${index})">Kolla svar</button>
+                    <p id="quizResult${index}"></p>
+                `;
+                quizContainer.innerHTML += quizHTML;
+            });
+        }
+
+        function checkQuiz(index) {
+            let answer = document.getElementById(`quiz${index}`).value.trim();
+            let result = document.getElementById(`quizResult${index}`);
+            if (answer === quizData[index].answer) {
+                result.innerHTML = "✅ Rätt!";
+                result.style.color = "green";
+            } else {
+                result.innerHTML = "❌ Fel! Prova igen.";
+                result.style.color = "red";
+            }
+        }
+
+        createQuiz();
+    </script>
+</body>
+</html>
